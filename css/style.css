@@ -1,0 +1,264 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+
+/* Variables */
+
+:root{
+    /* Palette */
+
+    --primary: #D9D9D9;
+    --secondary: #070707;
+    --light: #F2F4F7;
+    --accent:#70566D;
+
+    /* Font Size */
+
+    --text-xxl: 4.8em;
+    --text-xl: 3.6em;
+    --text-lg: 3.2em;
+    --text-md: 2.0em;
+    --text-sm: 1.6em;
+    --text-xs: 1.2em;
+
+    /* Spaccings */
+
+    --sp-xxl:12rem;
+    --sp-xl:8rem;
+    --sp-lg:5rem;
+    --sp-md:3.2rem;
+    --sp-sm:1.6rem;
+    --sp-xs:0.8rem;
+
+    --bs-link-hover-color: #070707;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--text-sm);
+    color: var(--secondary);
+}
+ul{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+.container {
+    max-width:1200px;
+    margin: 0 auto;
+    --bs-gutter-x: 0rem;
+}
+
+
+/* HEADER */
+
+.header{
+    list-style-type: none;
+    background-color:var(--primary);
+    display: flex;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color:var(--primary);
+}
+
+/* NAVBAR */
+
+.navbar .navbar__link{
+    font-family: 'Poppins', sans-serif;
+    padding: var(--sp-xs);
+    display: flex;
+    animation: appear 2s 1 linear;
+    
+}
+.navbar{
+    display: flex;
+}
+.navbar .menu{
+    display: flex;
+}
+
+.navbar .menu .menu__link{
+    color: var(--secondary);
+    padding: var(--sp-xs);
+    transition: background .3s;
+    
+}
+
+.navbar .menu .menu__link:hover {
+    background-color: var(--accent);
+}
+
+.navbar .menu__item{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+
+/* HOME */
+
+.banner{
+    width: 100%;
+}
+
+.mas-vendidos .titulo{
+    justify-items: center;
+    display: grid;
+}
+.articulos-mas-vendidos .titulo{
+    justify-items: center;
+    display: grid;
+}
+.mejores-marcas .titulo{
+    justify-items: center;
+    display: grid;
+}
+
+
+
+/* NOSOTROS */
+.nosotros{
+    position: relative;
+    text-align: center;
+}
+.nosotros .nosotros__texto{
+    position: absolute;
+    top: 33%;
+    background-color:rgb(217, 217, 217, 50%);
+}
+
+/* NOVEDADES */
+
+.nuevos_lanzamientos .nuevos_lanzamientos_item{
+    font-size: var(--text-sm);
+    color: var(--secondary);
+    display: inline-block;
+}
+iframe{
+    width: 100%;
+}
+
+.nuevos_lanzamientos .titulo{
+    justify-items: center;
+    display: grid;
+}
+
+.trailers .titulo{
+    justify-items: center;
+    display: grid;
+}
+/* PRODUCTOS */
+
+.filtro__lateral{
+    background-color: var(--accent);
+    background-color: rgb(112, 86, 109, 50%) ;
+    grid-row: 1/3;
+}
+
+.filtro__lateral .filtro__lateral__var{
+    color: var(--secondary);
+}
+
+.filtro{
+    background-color: rgb(112, 86, 109, 50%) ;
+    grid-column: 2;
+}
+
+.filtro__div{
+    color: var(--secondary);
+}
+
+.grid__productos{
+    display: grid;
+    grid-template-columns: 15vw 1fr;
+    grid-template-rows: 125px 1fr ; 
+    gap: 1vw;
+}
+
+/* CONTACTO */
+
+.contacto{
+    display: grid;
+    grid-template-columns: 12, 1fr;
+    grid-template-rows: 6, 1fr;
+    background-color: var(--accent);
+    gap: 1em;
+}
+.contacto .mapa{
+    grid-column: span 6;
+}
+.contacto .formulario{
+    background-color: var(--accent);
+    grid-row: 2;
+    grid-column: span 6;
+}
+.contacto .formulario{
+    display: grid;
+    grid-template-columns: 12, 1fr;
+    grid-template-rows: 6, 1fr;
+    
+}
+/* ESTILOS MOBILE */
+
+@media screen and (max-width:962px) {
+    .body{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        color: var(--secondary);
+    }
+}
+@media screen and (max-width:742px) {
+    .body{
+        font-family: 'Poppins', sans-serif;
+        color: var(--secondary);
+        font-size: 0.8em;
+    }
+    .navbar .navbar__link{
+        font-family: 'Poppins', sans-serif;
+        padding: var(--sp-xs);
+        display: inline-block;
+        
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar .menu{
+        font-family: 'Poppins', sans-serif;
+        color: var(--secondary);
+        display: inline-block;
+    }
+    
+    .navbar .menu .menu__link{
+        display: inline-block;
+
+    }
+    .navbar .menu__link{
+        font-family: 'Poppins', sans-serif;
+        display: inline-block;
+}
+}
+@media screen and (max-width:406px) {
+    .mejores-marcas .mejores-marcas-imagen{
+        width: 100%;
+    }
+    .filtro__lateral .filtro__lateral__div{
+        font-size: 0.75em;
+    }
+    .nosotros .nosotros__texto{
+        font-size: 0.75em;
+    }
+    }
