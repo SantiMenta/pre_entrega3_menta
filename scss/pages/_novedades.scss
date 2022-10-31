@@ -2,8 +2,8 @@
 
 .nuevos_lanzamientos{
     .nuevos_lanzamientos_item{
-        font-size: var($text-sm);
-        color: var($secondary);
+        font-size: $text-sm;
+        color: $secondary;
         display: inline-block;
     }
     .titulo{
