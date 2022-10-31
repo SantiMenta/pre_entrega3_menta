@@ -1,0 +1,15 @@
+/* NOSOTROS */
+.nosotros{
+    position: relative;
+    text-align: center;
+
+    .nosotros__texto{
+        position: absolute;
+        top: 33%;
+        background-color:rgba(217, 217, 217,0.5);
+    }
+    .nosotros__imagen{
+        padding: 10% 0% 10% 0%;
+        height: 100%;
+    }
+}

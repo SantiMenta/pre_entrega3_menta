@@ -1,0 +1,42 @@
+/* CONTACTO */
+
+.contacto{
+    display: grid;
+    padding-top: 10%;
+    gap: 1em;
+    .mapa{
+        grid-column: span 6;
+        height: 270px;
+    }
+    .formulario{
+        background-color: rgba(112,86,109, 0.35);
+        display: grid;
+        grid-row: 2;
+        grid-column: span 6;
+        height: 416px;
+        padding: $sp-xs;
+        .titulo{
+            text-align: center;
+            padding:0;
+            margin:0
+        }
+        .formulario__control{
+            width: 90%;
+            margin-bottom: 0.8rem;
+            background: $primary;
+            margin: $sp-xs;
+            border:none
+        }
+        .input__consulta{
+            width: 90%;
+            margin: $sp-xs;
+            padding: $sp-xs;
+            background-color: $primary;
+            border: none;
+        }
+        .boton{
+            background-color: $primary;
+            border: none;
+        }
+    }
+}

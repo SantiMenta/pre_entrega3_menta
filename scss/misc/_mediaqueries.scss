@@ -1,0 +1,14 @@
+/* Esilo mobile */
+@media screen and (max-width: 962px) {
+    .body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1em;
+      color: var($secondary); } 
+    }
+  
+  @media screen and (max-width: 742px) {
+    .body {
+      font-family: 'Poppins', sans-serif;
+      color: var($secondary);
+      font-size: 0.8em; } }
+  

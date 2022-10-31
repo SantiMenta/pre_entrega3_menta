@@ -1,0 +1,31 @@
+/* HOME */
+
+.banner{
+    width: 100%;
+}
+
+.mas-vendidos{
+    .titulo{
+    justify-items: center;
+    display: grid;
+}
+}
+
+.articulos-mas-vendidos{
+    .titulo{
+        justify-items: center;
+        display: grid;
+    }
+}
+.mejores-marcas {
+    .titulo{
+        justify-items: center;
+        display: grid;
+    }
+} 
+
+@media screen and (max-width:406px) {
+    .mejores-marcas .mejores-marcas-imagen{
+        width: 100%;
+    }
+}
