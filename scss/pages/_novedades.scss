@@ -1,0 +1,22 @@
+/* NOVEDADES */
+
+.nuevos_lanzamientos{
+    .nuevos_lanzamientos_item{
+        font-size: var($text-sm);
+        color: var($secondary);
+        display: inline-block;
+    }
+    .titulo{
+        justify-items: center;
+        display: grid;
+    }
+}
+iframe{
+    width: 100%;
+}
+.trailers {
+    .titulo{
+        justify-items: center;
+        display: grid;
+    }
+}

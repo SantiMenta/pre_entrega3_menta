@@ -1,0 +1,31 @@
+/* Normalize */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;
+}
+body{
+    display: grid;
+    font-family: 'Poppins', sans-serif;
+    font-size: $text-sm;
+    color: $secondary;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+ul{
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+    color: $secondary;
+}
+.container {
+    max-width:1200px;
+    margin: 0 auto;
+    --bs-gutter-x: 0rem;
+}
